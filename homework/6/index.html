@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Holy Grail Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="HolyGrail">
+    <header>
+        <h1>LAB-6</h1>
+    </header>
+    <div class="body">
+      <main class="content">
+        <h1 id="home">Home</h1>
+        <p>This is my Lab 6 Assignment</p>
+        <h1 id="js">JavaScript Thingy</h1>
+        <p>In this section, there is a text box provided for users to input data. 
+            Subsequently, a JavaScript function has been implemented to perform a bubble sort on the input data, and this function is linked to a button labeled "sortButton." When users click the "sortButton," it triggers the sorting process on the array they've provided and presents the sorted array as the output.
+        </p>
+        <div id="input">
+            <label for="numbers">Enter numbers (comma-separated):</label>
+            <input type="text" id="numbers" placeholder="e.g., 5, 2, 8, 1">
+            <button id="sortButton">Sort</button>
+        </div>
+        <div id="output">
+            <p>Sorted Numbers:</p>
+            <ul id="sortedList"></ul>
+        </div>
+      </main>
+      <nav class="nav">
+        <h1 id="nav">Navigation</h1>
+        <a href="#home">Home</a>
+        <a href="#js">JavaScript</a>
+        <a href="#add">Addendum</a>
+      </nav>
+      <aside class="ads">
+        <h1>Addvertisements</h1>
+        <p id="product">HTML and CSS QuickStart Guide</p>
+        <a href="https://amazon.com/HTML-CSS-QuickStart-Guide-Simplified/dp/1636100007/ref=sr_1_1_sspa?crid=207A7VO4G1N89&keywords=css+books&qid=1699036067&sprefix=css+books%2Caps%2C137&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+            <img src="https://m.media-amazon.com/images/I/61XVS77279L._SL1360_.jpg" alt="">
+        </a>
+        <p>Buy new: $24.43</p>
+        
+        <p id="product">HTML and CSS QuickStart Guide</p>
+        <a href="https://www.amazon.com/Web-Design-HTML-JavaScript-jQuery/dp/1118907442/ref=sr_1_6?crid=207A7VO4G1N89&keywords=css+books&qid=1699036224&sprefix=css+books%2Caps%2C137&sr=8-6">
+            <img src="https://m.media-amazon.com/images/I/811a1DHT8OL._SL1500_.jpg" alt="">
+        </a>
+        <p>Buy new: $35.90</p>
+      </aside>
+    </div>
+    <footer>
+        <h1 id="add">Addendum</h1>
+        <p>The JavaScript code solves the problem of sorting a list of numbers entered by the user using the bubble sort algorithm and then displaying the sorted numbers in the HTML document.</p>
+        <p>Initialization: The code initializes event listeners for the HTML elements - a sort button, an input field for numbers, and a container for displaying the sorted numbers.</p>
+        <p>Event Handling: When the user clicks the "sortButton," an event listener is triggered, which performs the following steps:</p>
+        <p>a. It retrieves the user's input from the 'numbersInput' field and splits the input based on commas (,) to create an array of numbers.</p>
+        <p>b. It applies the bubble sort algorithm to the input numbers to sort them. The bubble sort repeatedly compares adjacent elements in the array and swaps them if they are in the wrong order until no more swaps are needed.</p>
+        <p>c. After sorting, it calls the displaySortedNumbers function to display the sorted numbers in the 'sortedList' container.</p>
+        <p>Bubble Sort Function: The bubbleSort function implements the bubble sort algorithm, ensuring that the elements are sorted in ascending order.</p>
+        <p>Display Function: The displaySortedNumbers function clears any previous results in the 'sortedList' container and then iterates through the sorted numbers to create list items for each number, appending them to the 'sortedList' container.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+
+</html>

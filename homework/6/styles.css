@@ -1,0 +1,93 @@
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+footer{
+    padding: 20px;
+    background-color: rgba(127, 255, 212, 0.328);
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 30px;
+    color: chocolate;
+}
+
+#product{
+    font-weight: bolder;
+    color: black;
+}
+
+img{
+    width:100px;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+footer h1{
+    text-align: center;
+}
+
+.HolyGrail {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+  
+.body {
+    display: flex;
+    flex: 1;
+    text-align: center;
+}
+
+.content {
+    flex: 1;
+}
+  
+.nav, .ads {
+    flex: 0 0 12em;
+    background-color: aliceblue;
+    color: darkorange;
+}
+  
+.nav {
+    order: -1;
+}
+
+.HolyGrail,
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  order: -1;
+}
+
+@media (min-width: 768px) {
+  .body {
+    flex-direction: row;
+    flex: 1;
+  }
+  .content {
+    flex: 1;
+  }
+  .nav, .ads {
+    flex: 0 0 12em;
+  }
+}
+  
